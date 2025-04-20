@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Puzzle</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0288d1" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Water Puzzle</h1>
+  <div id="game"></div>
+  <div id="controls">
+    <button onclick="undoMove()">Undo</button>
+    <span id="moves">Moves: 0</span>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+    <label for="volumeControl">Volume</label>
+  </div>
+  <div id="winMessage" class="hidden">You Win!</div>
+  <script src="script.js"></script>
+</body>
+</html>
